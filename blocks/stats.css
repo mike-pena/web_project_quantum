@@ -1,0 +1,60 @@
+.stats {
+  background-image: url("../images/stats.png");
+  background-size: cover;
+  background-position: center;
+  height: 782px;
+  color: #fff;
+}
+
+.stats-container {
+  width: 85%;
+  margin: auto;
+}
+
+.stats__title {
+  font-family: "Forum";
+  font-size: 52px;
+  margin-bottom: 35px;
+  padding-top: 100px;
+}
+
+.stats__description {
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.stats__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.stat {
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  list-style-type: none;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat__icon {
+  width: 35px;
+  padding-bottom: 5px;
+}
+
+.stat__number {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat__label {
+  width: 120px;
+  text-align: center;
+}
