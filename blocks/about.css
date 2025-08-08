@@ -1,0 +1,33 @@
+.about {
+  display: flex;
+  width: 85%;
+  margin: 100px auto 100px auto;
+  column-gap: 85px;
+}
+
+.about__title {
+  font-family: "Forum";
+  font-size: 52px;
+  color: #055977;
+  margin-bottom: 38px;
+}
+
+.about__image {
+  width: 600px;
+}
+
+.about__paragraph {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.about__paragraph:first-of-type {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 950px) {
+}
+
+@media screen and (max-width: 644px) {
+}
