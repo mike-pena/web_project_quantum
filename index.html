@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
   </head>
   <body class="page">
-    <header class="header">
+    <header id="header" class="header">
       <nav class="header__nav nav">
         <a class="nav__logo" href="/">
           <img
@@ -20,9 +20,9 @@
             alt="Quantum DMC"
           />
         </a>
-        <ul class="nav__list">
+        <ul class="nav__links">
           <li class="nav__item">
-            <a class="nav__link" href="#about">Inicio</a>
+            <a class="nav__link" href="#header">Inicio</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#about">Quienes Somos</a>
@@ -40,25 +40,24 @@
             <a class="nav__link" href="#contact">Contacto</a>
           </li>
         </ul>
-        <div class="nav__lang-toggle lang-toggle">
-          <button class="lang-toggle__button" type="button">
-            <img class="lang-toggle__icon" src="" alt="English" />
-            <p class="lang-toggle__label">ENG</p>
-          </button>
-        </div>
+        <button class="lang-toggle__button" type="button">
+          <img class="lang-toggle__icon" src="./images/eng.png" alt="English" />
+          <p class="lang-toggle__label">ENG</p>
+        </button>
       </nav>
       <div class="header__hero hero">
         <h1 class="hero__title">
           Descubre el
           <span class="hero__title-accent">Caribe Mexicano</span> con
-          experiencias únicas disñadas para tí.
+          experiencias únicas, diseñadas para tí.
         </h1>
         <p class="hero__description">
-          En Quantum DMC, combinamos logística experta, pasión por el servicio y
-          un equipo altamente profesional para cuidar cada detalle y crear
-          momentos inolvidables.
+          En <span class="hero__description-accent">Quantum DMC</span>,
+          combinamos logística experta, pasión por el servicio y un equipo
+          altamente profesional para cuidar cada detalle y crear momentos
+          inolvidables.
         </p>
-        <a class="hero__button button" href="#contact">Contáctanos</a>
+        <a class="hero__button" href="#contact">Contáctanos</a>
       </div>
     </header>
 

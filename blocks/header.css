@@ -1,3 +1,109 @@
+.header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  color: #fff;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 85%;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.nav__logo-image {
+  width: 120px;
+}
+
+.nav__links {
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 9px 16px;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav__item:hover {
+  border: 1px solid #fff;
+  border-radius: 25px;
+}
+
+.lang-toggle__button {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  background-color: #ffffff00;
+  border: none;
+}
+
+.lang-toggle__button:hover {
+  cursor: pointer;
+}
+
+.lang-toggle__icon {
+  width: 34px;
+  height: 34px;
+}
+
+.lang-toggle__label {
+  color: #fff;
+}
+
+.header__hero {
+  width: 85%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: 800;
+  width: 70%;
+}
+
+.hero__title-accent {
+  font-size: 75px;
+  display: block;
+}
+
+.hero__description {
+  font-size: 16px;
+  font-weight: 600;
+  width: 45%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.hero__description-accent {
+  font-weight: 800;
+}
+
+.hero__button {
+  padding: 9px 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #18aeb5;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 950px) {
 }
 
