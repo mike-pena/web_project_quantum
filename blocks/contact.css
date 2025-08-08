@@ -1,0 +1,54 @@
+.contact {
+  padding-top: 70px;
+}
+
+.contact-container {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 70px;
+  display: flex;
+  gap: 50px;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+}
+
+.contact__title {
+  font-family: "Forum";
+  font-size: 52px;
+  color: #055977;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.contact__details-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.contact__details-item {
+  display: flex;
+  align-items: center;
+}
+
+.detail__icon {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.detail-label-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.map {
+  border-radius: 15px;
+}
