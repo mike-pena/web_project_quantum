@@ -74,6 +74,7 @@
   font-size: 48px;
   font-weight: 800;
   width: 70%;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .hero__title-accent {
@@ -87,6 +88,8 @@
   width: 45%;
   margin-top: 20px;
   margin-bottom: 40px;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
 }
 
 .hero__description-accent {
@@ -102,4 +105,5 @@
   font-size: 18px;
   background-color: #18aeb5;
   border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }

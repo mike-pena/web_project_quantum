@@ -2,7 +2,7 @@
   background-image: url("../images/stats.png");
   background-size: cover;
   background-position: center;
-  height: 782px;
+  height: 780px;
   color: #fff;
 }
 
@@ -17,11 +17,14 @@
   margin-bottom: 35px;
   padding-top: 100px;
   text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3);
 }
 
 .stats__description {
   width: 600px;
   margin-bottom: 20px;
+  line-height: 1.4;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.5);
 }
 
 .stats__list {
@@ -36,12 +39,13 @@
   height: 200px;
   border-radius: 15px;
   list-style-type: none;
-  margin-top: 90px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   color: #000;
   align-items: center;
   justify-content: center;
+  box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
 }
 
 .stat__icon {
