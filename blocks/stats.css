@@ -2,12 +2,13 @@
   background-image: url("../images/stats.png");
   background-size: cover;
   background-position: center;
-  height: 780px;
   color: #fff;
+  padding-bottom: 120px;
 }
 
 .stats-container {
   width: 85%;
+  max-width: 1280px;
   margin: auto;
 }
 
@@ -30,16 +31,17 @@
 .stats__list {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   padding: 0;
+  margin-top: 80px;
 }
 
 .stat {
   background-color: #fff;
-  width: 200px;
+  min-width: 200px;
   height: 200px;
   border-radius: 15px;
   list-style-type: none;
-  margin-top: 80px;
   display: flex;
   flex-direction: column;
   color: #000;
@@ -62,4 +64,99 @@
 .stat__label {
   width: 120px;
   text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+  .stats__title {
+    font-size: 48px;
+  }
+
+  .stat {
+    min-width: 170px;
+    height: 170px;
+  }
+
+  .stat__number {
+    font-size: 28px;
+  }
+
+  .stat__label {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .stats {
+    padding-bottom: 100px;
+  }
+
+  .stats__title {
+    font-size: 42px;
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .stats__description {
+    width: 80%;
+    font-size: 14px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .stats__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-top: 30px;
+  }
+
+  .stat {
+    width: 200px;
+    height: 200px;
+  }
+
+  .stat:nth-child(odd) {
+    justify-self: end;
+  }
+
+  .stat:nth-child(even) {
+    justify-self: start;
+  }
+
+  .stat__number {
+    font-size: 32px;
+  }
+
+  .stat__label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stats {
+    padding-bottom: 80px;
+  }
+
+  .stats__title {
+    font-size: 32px;
+    padding-top: 45px;
+    margin-bottom: 20px;
+  }
+
+  .stats__description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stats__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .stat {
+    width: 180px;
+    height: 180px;
+  }
 }

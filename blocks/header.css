@@ -2,8 +2,9 @@
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
-  height: 800px;
+  max-height: 800px;
   color: #fff;
+  padding-bottom: 100px;
 }
 
 .header__nav {
@@ -49,6 +50,7 @@
   column-gap: 8px;
   background-color: #ffffff00;
   border: none;
+  padding: 0;
 }
 
 .lang-toggle__button:hover {
@@ -56,12 +58,13 @@
 }
 
 .lang-toggle__icon {
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
 }
 
 .lang-toggle__label {
   color: #fff;
+  font-size: 14px;
 }
 
 .header__hero {
@@ -73,7 +76,7 @@
 .hero__title {
   font-size: 48px;
   font-weight: 800;
-  width: 70%;
+  width: 645px;
   text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -85,7 +88,7 @@
 .hero__description {
   font-size: 16px;
   font-weight: 600;
-  width: 45%;
+  width: 415px;
   margin-top: 20px;
   margin-bottom: 40px;
   text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -106,4 +109,96 @@
   background-color: #18aeb5;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1025px) {
+  .nav__logo-image {
+    width: 100px;
+  }
+
+  .nav__links {
+    column-gap: 5px;
+  }
+
+  .hero__title {
+    font-size: 40px;
+  }
+
+  .hero__title-accent {
+    font-size: 64px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .nav__links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header__nav {
+    padding-top: 15px;
+  }
+
+  .nav__logo-image {
+    width: 100px;
+  }
+
+  .header__hero {
+    width: 85%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 40px;
+    width: 100%;
+  }
+  .hero__description {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .hero__title {
+    font-size: 38px;
+  }
+
+  .hero__title-accent {
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header {
+    padding-bottom: 70px;
+  }
+  .nav__logo-image {
+    width: 80px;
+  }
+
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .hero__title-accent {
+    font-size: 42px;
+    line-height: 1;
+  }
+
+  .hero__button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__nav {
+    padding-top: 10px;
+  }
+
+  .nav__logo-image {
+    width: 60px;
+  }
 }
