@@ -13,11 +13,20 @@
   align-items: flex-start;
   width: 85%;
   margin: auto;
+}
+
+.nav__logo {
+  width: 120px;
   padding-top: 25px;
 }
 
 .nav__logo-image {
-  width: 120px;
+  width: 100%;
+}
+
+.nav__links-container {
+  display: flex;
+  padding-top: 25px;
 }
 
 .nav__links {
@@ -51,6 +60,7 @@
   background-color: #ffffff00;
   border: none;
   padding: 0;
+  margin-left: 40px;
 }
 
 .lang-toggle__button:hover {
@@ -70,7 +80,7 @@
 .header__hero {
   width: 85%;
   margin: auto;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .hero__title {
@@ -100,7 +110,10 @@
 }
 
 .hero__button {
-  padding: 9px 12px;
+  display: block;
+  width: 170px;
+  padding: 12px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
@@ -111,13 +124,22 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
-@media screen and (max-width: 1025px) {
-  .nav__logo-image {
+.hero__button:hover {
+  background-color: #071335;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 1048px) {
+  .nav__logo {
     width: 100px;
   }
 
   .nav__links {
     column-gap: 5px;
+  }
+
+  .lang-toggle__button {
+    margin-left: 20px;
   }
 
   .hero__title {
@@ -131,23 +153,36 @@
 }
 
 @media screen and (max-width: 915px) {
-  .nav__links {
+  .nav__links-container {
     display: none;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    background-color: #000;
+  }
+
+  .nav__logo {
+    width: 100px;
+    padding-top: 5px;
+    padding-left: 70px;
+  }
+
+  .header__hero {
+    padding-top: 230px;
   }
 }
 
 @media screen and (max-width: 760px) {
-  .header__nav {
-    padding-top: 15px;
-  }
-
-  .nav__logo-image {
-    width: 100px;
+  .nav__logo {
+    padding-left: 60px;
   }
 
   .header__hero {
     width: 85%;
-    margin-top: 20px;
     text-align: center;
   }
 
@@ -155,13 +190,22 @@
     font-size: 40px;
     width: 100%;
   }
+
   .hero__description {
     width: 100%;
     font-size: 14px;
   }
+
+  .hero__button {
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 648px) {
+  .nav__logo {
+    padding-left: 50px;
+  }
+
   .hero__title {
     font-size: 38px;
   }
@@ -172,11 +216,56 @@
 }
 
 @media screen and (max-width: 520px) {
-  .header {
-    padding-bottom: 70px;
-  }
   .nav__logo-image {
     width: 80px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+  }
+
+  .hero__title-accent {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .hero__description {
+    margin-top: 30px;
+  }
+
+  .hero__button {
+    font-size: 16px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .hero__title {
+    font-size: 28px;
+  }
+
+  .hero__title-accent {
+    font-size: 56px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  .nav__logo {
+    padding-top: 5px;
+    padding-left: 25px;
+  }
+
+  .lang-toggle__button {
+    padding-top: 10px;
+  }
+
+  .nav__logo-image {
+    width: 60px;
+  }
+
+  .header__hero {
+    padding-top: 150px;
   }
 
   .hero__title {
@@ -186,19 +275,5 @@
   .hero__title-accent {
     font-size: 42px;
     line-height: 1;
-  }
-
-  .hero__button {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .header__nav {
-    padding-top: 10px;
-  }
-
-  .nav__logo-image {
-    width: 60px;
   }
 }

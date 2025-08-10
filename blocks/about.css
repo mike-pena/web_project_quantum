@@ -4,7 +4,7 @@
   max-width: 1280px;
   margin: auto;
   padding-top: 100px;
-  padding-bottom: 120px;
+  padding-bottom: 140px;
   justify-content: space-between;
   column-gap: clamp(20px, 10vw, 85px);
 }
@@ -41,6 +41,10 @@
   font-weight: 600;
 }
 
+.about__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .about {
     column-gap: 50px;
@@ -68,9 +72,10 @@
   .about {
     flex-direction: column;
     align-items: center;
-    padding-top: 45px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 110px;
     row-gap: 25px;
+    scroll-margin-top: 100px;
   }
 
   .about__image-container {
@@ -95,7 +100,8 @@
 
 @media screen and (max-width: 500px) {
   .about {
-    padding-bottom: 40px;
+    padding-bottom: 100px;
+    scroll-margin-top: 85px;
   }
 
   .about__text-container {

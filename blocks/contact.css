@@ -75,6 +75,10 @@
 }
 
 @media screen and (max-width: 915px) {
+  .contact {
+    scroll-margin-top: 100px;
+  }
+
   .contact__title {
     font-size: 42px;
   }
@@ -94,7 +98,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
 
   .contact__info {
@@ -118,12 +122,15 @@
 
   .contact__map {
     flex: none;
-    height: 350px;
     width: 80%;
   }
 }
 
 @media screen and (max-width: 500px) {
+  .contact {
+    scroll-margin-top: 85px;
+  }
+
   .contact__info {
     width: 100%;
     align-items: center;
@@ -142,6 +149,6 @@
 
   .contact__map {
     width: 100%;
-    height: 280px;
+    height: 400px;
   }
 }

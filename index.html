@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
   </head>
   <body class="page">
+    <div class="menu__overlay"></div>
     <header id="header" class="header">
       <nav class="header__nav nav">
         <a class="nav__logo" href="#header">
@@ -20,30 +21,41 @@
             alt="Quantum DMC"
           />
         </a>
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link" href="#header">Inicio</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#about">Quienes Somos</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#services">Servicios</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#testimonials">Testimonios</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#blog">Blog</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#contact">Contacto</a>
-          </li>
-        </ul>
-        <button class="lang-toggle__button" type="button">
-          <img class="lang-toggle__icon" src="./images/eng.png" alt="English" />
-          <p class="lang-toggle__label">ENG</p>
+        <button class="menu menu__toggle" aria-label="Abrir menú">
+          <span class="menu__bar"></span>
+          <span class="menu__bar"></span>
+          <span class="menu__bar"></span>
         </button>
+        <div class="nav__links-container">
+          <ul class="nav__links" id="nav-menu">
+            <li class="nav__item">
+              <a class="nav__link" href="#header">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">Quienes Somos</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services">Servicios</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#testimonials">Testimonios</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#blog">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+          <button class="lang-toggle__button" type="button">
+            <img
+              class="lang-toggle__icon"
+              src="./images/eng.png"
+              alt="English"
+            />
+            <p class="lang-toggle__label">ENG</p>
+          </button>
+        </div>
       </nav>
       <div class="header__hero hero">
         <h1 class="hero__title">
@@ -376,5 +388,6 @@
       </div>
       <p class="footer__copyright">© 2024 Quantum DMC - All Rights Reserved.</p>
     </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

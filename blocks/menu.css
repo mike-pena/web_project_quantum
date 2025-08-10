@@ -1,0 +1,151 @@
+.menu__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.menu__overlay--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 45px;
+  position: fixed;
+  right: 60px;
+  z-index: 1001;
+}
+
+.menu__bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.menu__toggle--active .menu__bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu__toggle--active .menu__bar:nth-child(2) {
+  opacity: 0;
+}
+.menu__toggle--active .menu__bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+.header__nav--inactive {
+  background-color: transparent;
+}
+
+.nav__logo--inactive {
+  display: none;
+}
+
+@media (max-width: 915px) {
+  .menu__toggle {
+    display: flex;
+  }
+
+  .nav__links-container {
+    height: 100vh;
+    box-sizing: border-box;
+    position: fixed;
+    right: -250;
+    background: #333;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 40px;
+    gap: 1.5rem;
+    width: 300px;
+    z-index: 1000;
+    transition: right 0.9s ease;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .nav__item {
+    padding: 0;
+  }
+
+  .nav__item:hover {
+    border: none;
+    border-radius: 0;
+  }
+
+  .nav__link:hover {
+    border-bottom: 1px solid #fff;
+  }
+
+  .lang-toggle__button {
+    margin-left: 0px;
+  }
+
+  .menu__links--active {
+    display: flex;
+    right: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .menu__toggle {
+    right: 50px;
+  }
+
+  .nav__links-container {
+    align-items: center;
+    padding: 100px 40px;
+    width: 100vw;
+  }
+
+  .nav__links {
+    align-items: center;
+  }
+
+  .lang-toggle__button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 648px) {
+  .menu__toggle {
+    right: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .menu__toggle {
+    padding-top: 35px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .menu__toggle {
+    right: 30px;
+  }
+}
+
+@media (max-width: 328px) {
+  .menu__toggle {
+    padding-top: 25px;
+    right: 20px;
+  }
+}

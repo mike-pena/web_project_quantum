@@ -83,6 +83,7 @@
   .services {
     padding-top: 50px;
     padding-bottom: 80px;
+    scroll-margin-top: 100px;
   }
 
   .services__title {
@@ -105,6 +106,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  .services {
+    scroll-margin-top: 85px;
+  }
+
   .services__title {
     font-size: 32px;
   }
