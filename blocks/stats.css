@@ -139,7 +139,7 @@
   }
 
   .stats__title {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 20px;
   }
 
@@ -149,14 +149,12 @@
   }
 
   .stats__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 50px;
     gap: 20px;
   }
 
   .stat {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
   }
 }

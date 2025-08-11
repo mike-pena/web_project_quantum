@@ -60,7 +60,7 @@
   background-color: #ffffff00;
   border: none;
   padding: 0;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 .lang-toggle__button:hover {
@@ -167,7 +167,8 @@
 
   .nav__logo {
     width: 100px;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     padding-left: 70px;
   }
 
@@ -217,7 +218,7 @@
 
 @media screen and (max-width: 520px) {
   .nav__logo-image {
-    width: 80px;
+    width: 90px;
   }
 
   .hero__title {
@@ -252,7 +253,6 @@
 
 @media screen and (max-width: 328px) {
   .nav__logo {
-    padding-top: 5px;
     padding-left: 25px;
   }
 

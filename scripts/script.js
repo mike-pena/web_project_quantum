@@ -4,6 +4,7 @@ const menuOverlay = document.querySelector(".menu__overlay");
 const headerNav = document.querySelector(".header__nav");
 const navLogo = document.querySelector(".nav__logo");
 const navLinks = document.querySelectorAll(".nav__links");
+const mediaQuery = window.matchMedia("(max-width: 915px)");
 
 function toggleMenu() {
   menuLinks.classList.toggle("menu__links--active");
@@ -14,13 +15,23 @@ function toggleMenu() {
   document.body.classList.toggle("menu-open");
 }
 
-// Open/close on menu click
+function handleMenuEventListeners(e) {
+  if (e.matches) {
+    // screen is 915px or less
+    navLinks.forEach((link) => {
+      link.addEventListener("click", toggleMenu);
+    });
+  } else {
+    navLinks.forEach((link) => {
+      link.removeEventListener("click", toggleMenu);
+    });
+  }
+}
+
+mediaQuery.addEventListener("change", handleMenuEventListeners);
+
+handleMenuEventListeners(mediaQuery);
+
 menuToggle.addEventListener("click", toggleMenu);
 
-// Close when overlay is clicked
 menuOverlay.addEventListener("click", toggleMenu);
-
-// Close when nav link is clicked
-navLinks.forEach((link) => {
-  link.addEventListener("click", toggleMenu);
-});
