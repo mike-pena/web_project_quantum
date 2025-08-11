@@ -217,6 +217,10 @@
 }
 
 @media screen and (max-width: 520px) {
+  .nav__logo {
+    padding-left: 30px;
+  }
+
   .nav__logo-image {
     width: 90px;
   }
